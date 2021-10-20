@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./main.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.css" rel="stylesheet"
+      type="text/css">
+
+   <title></title>
+</head>
+
+<body>
+   <div class="contact-form">
+
+      <form id="form">
+
+         <div class="section">
+            <label for="username" class="smart-form">
+               <input type="text" class="form-giris" name="username" placeholder="Ad Soyad" id="username" />
+            </label>
+         </div>
+
+         <div class="section">
+            <label for="email" class="smart-form">
+               <input type="text" class="form-giris" name="email" placeholder="E-Posta" id="email" />
+            </label>
+         </div>
+
+         <div class="section">
+            <label for="pass" class="smart-form">
+               <input type="password" class="form-giris" name="pass" placeholder="Şifre" id="pass" />
+
+               <label for="showPass" class="label-pass">
+                  <input type="checkbox" id="showPass" value="sifre"> Şifreyi göster
+               </label>
+
+            </label>
+         </div>
+
+         <div class="section">
+            <label for="passAgain" class="smart-form">
+               <input type="password" class="form-giris" name="passAgain" placeholder="Şifre Tekrar" id="passAgain" />
+            </label>
+         </div>
+
+         <div class="section">
+            <button type="submit" class="btn btn-primary" id="submit">Gönder</button>
+         </div>
+      </form>
+
+
+
+      <div>
+         <div class="table-responsive">
+            <h3 class="kayitlar">KAYITLAR</h3>
+            <table class="table table-bordered">
+               <thead>
+                  <tr>
+                     <th class="text-center">Adı Soyadı</th>
+                     <th class="text-center">Statüsü</th>
+                     <th class="text-center">E-Posta Adresi</th>
+                  </tr>
+               </thead>
+               <tbody id="tbody">
+
+               </tbody>
+            </table>
+         </div>
+
+      </div>
+   </div>
+
+
+
+
+
+
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.4/jquery-confirm.min.js"></script>
+   <script src="./main.js"></script>
+</body>
+
+</html>
