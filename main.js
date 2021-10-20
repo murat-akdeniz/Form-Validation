@@ -132,11 +132,11 @@ $(document).ready(function () {
 
             function timer() {
                count++;
-               if (count < 20) {
+               if (count <= 10) {
                   if (record == 2) {
                      $('.form-giris').attr("disabled", "true");
                      $('#submit').attr("disabled", "true");
-                     alert('10 saniye bekleyiniz')
+                     alert('10 saniye sonra tekrar deneyiniz')
                      record++;
                   }
                }
